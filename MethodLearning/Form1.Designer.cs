@@ -1,6 +1,6 @@
 ﻿namespace MethodLearning
 {
-    partial class Form1
+    partial class FormHome
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxInput = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
             this.buttonCalculate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -52,14 +52,14 @@
             this.textBoxInput.Size = new System.Drawing.Size(297, 32);
             this.textBoxInput.TabIndex = 1;
             // 
-            // textBox1
+            // textBoxResult
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(254, 325);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 32);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxResult.Location = new System.Drawing.Point(254, 325);
+            this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.Size = new System.Drawing.Size(297, 32);
+            this.textBoxResult.TabIndex = 2;
+            this.textBoxResult.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // buttonCalculate
             // 
@@ -70,17 +70,18 @@
             this.buttonCalculate.TabIndex = 3;
             this.buttonCalculate.Text = "Find Square";
             this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
             // 
-            // Form1
+            // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(842, 514);
             this.Controls.Add(this.buttonCalculate);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.textBoxInput);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FormHome";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,7 +92,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxInput;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Button buttonCalculate;
     }
 }

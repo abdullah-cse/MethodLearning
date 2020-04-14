@@ -10,15 +10,24 @@ using System.Windows.Forms;
 
 namespace MethodLearning
 {
-    public partial class Form1 : Form
+    public partial class FormHome : Form
     {
-        public Form1()
+        int number = 0;
+        int result = 0;
+        public FormHome()
         {
             InitializeComponent();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void buttonCalculate_Click(object sender, EventArgs e)
+        {
+            number = Convert.ToInt32(textBoxInput.Text);
+            textBoxResult.Text = (number * number).ToString();
 
         }
     }
